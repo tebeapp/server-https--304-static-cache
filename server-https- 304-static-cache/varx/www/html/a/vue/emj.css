@@ -1,0 +1,30 @@
+body
+{
+    background: #9966FF;
+}
+.tebeapp-j {
+  display: block;
+  border: none;
+  font: small-caps bold 24px/1 sans-serif;
+  border: 2px solid #000000;
+  border-radius: 32px;
+  padding: 16px 16px;
+  background: #FFFFFF;
+  color: #000000;
+  box-shadow: 
+    inset 0 2px 0 rgba(0,0,0,.2), 
+    0 0 4px rgba(0,0,0,0.1);
+
+}
+span
+{
+    font-family: 'Anton', Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    filter: alpha(opacity=0);
+    position: relative;
+        top: 25%;
+        left: 0%;
+      
+        transform: translate(-50%, -50%)
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="." target="_blank">
+    <title>fitch img</title>
+</head>
+
+
+<style>
+.form {
+border: 3px solid #000;
+font-family: sans-serif;
+border-radius: 25px;
+height: auto;
+width: 350px;
+color: #000;
+background: linear-gradient(to bottom left , #00dbde , #eaeaea 100%);
+padding: 10px;
+}
+.form ol {
+padding-left: 0;
+}
+.form img {
+height: 128px;
+order: 1;
+border-radius: 100px; 
+border: 3px solid #fff; 
+box-shadow: 0 0 7px #666;
+}
+.form p {
+line-height: 32px;
+padding-left: 10px;
+}
+.form label, .form button {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+outline: 0;
+background-color: white;
+border: 0;
+padding: 7px 7px;
+color:#000;
+border-radius: 25px;
+width: 120px;
+cursor: pointer;
+font-size: 18px;
+transition-duration: 0.25s;
+}
+.form label:hover, .form button:hover {
+background-color: #000;
+color: white;
+}
+.form label:active, .form button:active {
+background-color: #000;
+color: white;
+}
+a { text-decoration: none; }
+</style>
+  <div class="form">
+    <div>
+      <label for="image_uploads">Загрузить изображение</label>
+      <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+    </div>
+    <div class="preview">
+      <p>vsv: Выберите изображение</p>
+    </div>
+    <h2><span id="mail"></span></h2>
+   <h2><span id="imgstatus"></span></h2>
+   <br>
+   <a href="./vue"><h3>vue3</h3></a>
+</div>
+
+<script src="fitch-304-https.js"></script>
+
+
+</html>
+

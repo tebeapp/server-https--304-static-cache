@@ -1,0 +1,9 @@
+http://localhost/a/ nginx
+http://localhost:3000/a node
+----------------------------
+https://localhost/a/ nginx
+https://localhost:3000/a node
+----------------------------
+
+var/ no
+varx/ Yes

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <html lang="ru">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>tebe.app: demo</title>
+    </head>
+<link href="op.png" rel="shortcut icon" type="image/x-icon">
+<style>
+    .form {
+    border: 3px solid #000;
+    font-family: sans-serif;
+    border-radius: 25px;
+    height: auto;
+    width: 350px;
+    color: #000;
+    background: linear-gradient(to bottom left , #00dbde , #eaeaea 100%);
+    padding: 10px;
+    }
+    .form ol {
+    padding-left: 0;
+    }
+    .form img {
+    height: 128px;
+    order: 1;
+    border-radius: 100px; 
+    border: 3px solid #fff; 
+    box-shadow: 0 0 7px #666;
+    }
+    .form p {
+    line-height: 32px;
+    padding-left: 10px;
+    }
+    .form label, .form button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background-color: white;
+    border: 0;
+    padding: 7px 7px;
+    color:#000;
+    border-radius: 25px;
+    width: 120px;
+    cursor: pointer;
+    font-size: 18px;
+    transition-duration: 0.25s;
+    }
+    .form label:hover, .form button:hover {
+    background-color: #000;
+    color: white;
+    }
+    .form label:active, .form button:active {
+    background-color: #000;
+    color: white;
+    }
+    </style>
+<link rel="stylesheet" type="text/css" href="emj.css">
+<link rel="stylesheet" href="scrol.css">
+<body>
+<div class="form">
+<div class="container pt-5" id="app">
+ 
+    <button class="btn primary" v-on:click="counter++">Вернуть</button>
+    <button class="btn danger" v-on:click="counter--">В карзину</button>
+    <div class="card center">
+        <h1>{{title}}: {{counter+1}}</h1>
+    </div>
+    <br>
+<div class="form-control">
+<span>
+<input id="imjtebe" type="text" v-bind:placeholder="placeholderString" v-bind:value="inputValue" v-on:input="inputChangeHandler" class="tebeapp-j" />
+</div>
+</span>
+<br>
+<button class="btn" v-on:click="addNewNote">Добавить</button>
+
+<div><h2>Новое сообщение {{inputVale}}</h2></div>
+<ul class="list">
+    <li class="list-item" v-for="myNote in noties">
+        {{myNote}}
+    </li>
+
+</ul>
+<span>
+    <div class="imjs"  onclick="tebeimj(imj=' 😉');" >😉 </div>
+    <div class="imjs"  onclick="tebeimj(imj=' 🔥');" >🔥 </div>
+    <div class="imjs"  onclick="tebeimj(imj=' 👻');" >👻 </div>
+</span> 
+</div>
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="vuemess.js"></script>
+<style> .imjs{cursor: pointer; font-size:25px; white-space: pre} </style>
+<script> let imj = '❤' //tebe.app
+function tebeimj() { document.getElementById("imjtebe").value= document.getElementById("imjtebe").value +imj;}
+</script>
+
+</body>
+</html>
